@@ -11,12 +11,12 @@ public class Board {
     public void initializePieces(){
         // Black major pieces (row 0)
         board[0][0] = new Piece(Color.BLACK, PieceType.ROOK);
-        board[0][1] = new Piece(Color.BLACK, PieceType.KNIGHT);
+        board[0][1] = new Piece(Color.BLACK, PieceType.NIGHT);
         board[0][2] = new Piece(Color.BLACK, PieceType.BISHOP);
         board[0][3] = new Piece(Color.BLACK, PieceType.QUEEN);
         board[0][4] = new Piece(Color.BLACK, PieceType.KING);
         board[0][5] = new Piece(Color.BLACK, PieceType.BISHOP);
-        board[0][6] = new Piece(Color.BLACK, PieceType.KNIGHT);
+        board[0][6] = new Piece(Color.BLACK, PieceType.NIGHT);
         board[0][7] = new Piece(Color.BLACK, PieceType.ROOK);
 
         //Black PAWNS
@@ -37,12 +37,12 @@ public class Board {
 
         // White major pieces (row 7)
         board[7][0] = new Piece(Color.WHITE, PieceType.ROOK);
-        board[7][1] = new Piece(Color.WHITE, PieceType.KNIGHT);
+        board[7][1] = new Piece(Color.WHITE, PieceType.NIGHT);
         board[7][2] = new Piece(Color.WHITE, PieceType.BISHOP);
         board[7][3] = new Piece(Color.WHITE, PieceType.QUEEN);
         board[7][4] = new Piece(Color.WHITE, PieceType.KING);
         board[7][5] = new Piece(Color.WHITE, PieceType.BISHOP);
-        board[7][6] = new Piece(Color.WHITE, PieceType.KNIGHT);
+        board[7][6] = new Piece(Color.WHITE, PieceType.NIGHT);
         board[7][7] = new Piece(Color.WHITE, PieceType.ROOK);
     }
 
