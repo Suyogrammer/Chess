@@ -37,7 +37,7 @@ public class MoveValidator {
             return true;
 
         //Move diagonally
-        if (toCol==fromCol+direction && toRow==fromRow+direction && piece!=null && piece.getColor()!=color) return true;
+        if (Math.abs(toCol-fromCol) == 1 && toRow==fromRow+direction && piece!=null && piece.getColor()!=color) return true;
 
         return false;
     }
@@ -119,7 +119,7 @@ public class MoveValidator {
         int colDiff = Math.abs(toCol-fromCol);
 
         //Move 1 sqaure in any direction
-        return rowDiff<=1 || colDiff<=1; 
+        return rowDiff<=1 && colDiff<=1; 
     }
 
     // -------QUEEN--------
