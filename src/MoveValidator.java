@@ -95,8 +95,8 @@ public class MoveValidator {
 
         if(rowDiff != colDiff) return false;
 
-        int rowStep = (rowDiff>0) ? 1 : -1;
-        int colStep = (colDiff>0) ? 1 : -1;
+        int rowStep = (toRow > fromRow) ? 1 : -1;
+        int colStep = (toCol > fromCol) ? 1 : -1;
 
         int r = fromRow+rowStep;
         int c = fromCol+colStep;
@@ -125,6 +125,6 @@ public class MoveValidator {
     // -------QUEEN--------
     public static boolean validateQueenMove(Board board, int fromRow, int fromCol, int toRow, int toCol){
         //BISHOP+ROOK
-        return validateBishopMove(board, fromRow, fromCol, toRow, toCol) && validateRookMove(board, fromRow, fromCol, toRow, toCol);
+        return validateBishopMove(board, fromRow, fromCol, toRow, toCol) || validateRookMove(board, fromRow, fromCol, toRow, toCol);
     }
 }
